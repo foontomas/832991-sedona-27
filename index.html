@@ -1,12 +1,85 @@
-<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li> <a href="info.html">Информация</a></li>
+        <li> <a href="photo-video.html">Фото и видео</a></li>
+      </ul>
+    </nav>
+    <!--Способ размещения лого в центре, кроме как 
+      через разбитие блока навигации на две части - придумать не могу-->
+    <div class="main-header-logo">
+      <a href="index.html">
+        <img src="img/index-logo.svg" width="111" height="24" alt="Логотип города Седона">
+      </a>
+    </div>
+    <nav>
+      <ul>  
+      <li> <a href="map.html">Карта штата</a></li>
+        <li> <a href="hotels.html">Гостиницы</a></li>
+      </ul>	
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <section class="welcome-banner">
+        <img src="img\background-photo.png" width="1200" height="773">
+        <img src="img\welcome.png" width="459" height="353">
+        <img src="polygon.png" width="1203" height="59">
+        <div class="white-back">
+          <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>&gt;
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
 
-  </body>
+      <div class="inner-grid">
+      <!---Часть кода, отмеченная на макете красным, пропущена Тут, скорее всего, много блоков
+      <div> со свойством display:flex-->
+      </div>
+
+      <div>
+        <h2>Заинтересовались?</h2>&gt;
+        <p>Укажите предполагаемые даты поездки, <br>
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <div class="brown-button">
+            <a href="#">поиск гостиницы в седоне</a>
+            <form>
+              <!--Здесь будет форма-->
+            </form>
+
+          </div>
+      </div>
+      <div class="map">
+        <!--Здесь будет карта-->
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer-contacts">
+        #visitsedona<br>
+        ТЕЛЕФОН: +7 (495) 666-02-66
+    </p>
+    <div class="footer-social">
+      <b>Давайте дружить!</b>
+      <ul>
+        <li><a class="social-button" href="https://twitter.com">Twitter</a></li>
+        <li><a class="social-button" href="https://facebook.com">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>	
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      <b>Разработано:</b><a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+    </p>
+
+
+    </footer>
+
+</body>
+
 </html>
