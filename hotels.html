@@ -2,31 +2,24 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Sedona - hotels page</title>
+        <title>HTML Academy: Седона - отели</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-            <ul class="site-navigation">
+              <ul class="site-navigation">
                 <li> <a href="info.html">Информация</a></li>
                 <li> <a href="photo-video.html">Фото и видео</a></li>
-            </ul>
-            </nav>
-            <!--Способ размещения лого в центре, кроме как 
-            через разбитие блока навигации на две части - придумать не могу-->
-            <div class="main-header-logo">
-            <a href="index.html">
-                <img src="img/index-logo.svg" width="111" height="24" alt="Логотип города Седона">
-            </a>
-            </div>
-            <nav>
-            <ul>  
-            <li> <a href="map.html">Карта штата</a></li>
+                <li class="main-header-logo">
+                   <a href="index.html"><img src="img/index-logo.svg" width="111" height="24"
+                   alt="Логотип города Седона"></a> 
+                </li>
+                <li> <a href="map.html">Карта штата</a></li>
                 <li> <a href="hotels.html">Гостиницы</a></li>
-            </ul>	
+              </ul>
             </nav>
-        </header>
+          </header>
 
         <main>
             <form class="filter" name="filter-form">
@@ -56,7 +49,7 @@
             </div>
             <section class="catalog">
 				<h2 class="hidden">Вывод поиска</h2> 
-                <ul> <!--Возможно, лучше было бы div, но делаем по аналогии с учебным проектом-->
+                <ul> 
                     
                     <!--карточка 1-->
                     <li>

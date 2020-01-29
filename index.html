@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Sedona - main page</title>
+    <title>HTML Academy: Седона - главная страница</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
 <body>
@@ -11,20 +11,13 @@
       <ul class="site-navigation">
         <li> <a href="info.html">Информация</a></li>
         <li> <a href="photo-video.html">Фото и видео</a></li>
-      </ul>
-    </nav>
-    <!--Способ размещения лого в центре, кроме как 
-      через разбитие блока навигации на две части - придумать не могу-->
-    <div class="main-header-logo">
-      <a href="index.html">
-        <img src="img/index-logo.svg" width="111" height="24" alt="Логотип города Седона">
-      </a>
-    </div>
-    <nav>
-      <ul>  
-      <li> <a href="map.html">Карта штата</a></li>
+        <li class="main-header-logo">
+           <a href="index.html"><img src="img/index-logo.svg" width="111" height="24"
+           alt="Логотип города Седона"></a> 
+        </li>
+        <li> <a href="map.html">Карта штата</a></li>
         <li> <a href="hotels.html">Гостиницы</a></li>
-      </ul>	
+      </ul>
     </nav>
   </header>
 
@@ -39,25 +32,25 @@
         </div>
       </section>
 
-      <div class="inner-grid">
+      <section class="inner-grid">
+        <h2 class="hidden">преимущества</h2>
       <!---Часть кода, отмеченная на макете красным, пропущена Тут, скорее всего, много блоков
       <div> со свойством display:flex-->
-      </div>
+      </section>
 
-      <div>
-        <h2>Заинтересовались?</h2>
+      <section>
+        <h2>поиск гостиницы в седоне</h2>
+        <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <div class="interactive">
-            <div class="brown-button">
-              <a href="#">поиск гостиницы в седоне</a>
-            </div>
+            <button class="brown-button" type="submit">поиск гостиницы в седоне</button>
             <form class="hidden">
               <!--Здесь будет форма-->
             </form>
 
           </div>
-      </div>
+      </section>
       <div class="map">
         <!--Здесь будет карта-->
       </div>
