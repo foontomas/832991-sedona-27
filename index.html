@@ -150,9 +150,22 @@
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <div class="interactive">
-            <button class="brown-button" type="submit">поиск гостиницы в седоне</button>
-            <form class="hidden">
+            <button class="brown-button" type="button">поиск гостиницы в седоне</button>
+            <form class="visually-hidden" enctype="multipart/form-data">
               <!--Здесь будет форма-->
+              <!--Не могу найти способ приведения к виду макета, кроме как с использованием типа поля time-->
+              <!--<label>
+                дата заезда:
+                <input type="date" value="2017-04-24">
+              </label>-->
+              <label>
+                дата заезда:
+                <time" datetime="2017-04-24">24 апреля 2017</time>
+              </label><label>
+                дата выезда:
+                <type="time" value="" placeholder="4 июля 2017">
+              </label>
+              <br><button class="blue-back" type="submit" name="search">найти</button>
             </form>
 
           </div>
