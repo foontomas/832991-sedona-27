@@ -153,19 +153,31 @@
             <button class="brown-button" type="button">поиск гостиницы в седоне</button>
             <form class="visually-hidden" enctype="multipart/form-data">
               <!--Здесь будет форма-->
-              <!--Не могу найти способ приведения к виду макета, кроме как с использованием типа поля time-->
-              <!--<label>
-                дата заезда:
+              <!--Не могу найти способ приведения к виду макета. Варианты:
                 <input type="date" value="2017-04-24">
-              </label>-->
+                или 
+                <input type="text" name="check-in-date" placeholder="24 апреля 2017" pattern="[1-31]{,2}/s^[А-Яа-я]{,8}/s[2017-2117]{4}">
+                или
+                поместить три поля ввода в один блок, number, select, number, с паттернами. Визуально можно попробовать спрятать стилями
+                display: inline-block или float, но так лучше делать для пары input+submit, а это какие-то костыли.
+                Кажется, тут нужен JS. Вводить номер месяца, поместить названия месяцев в массив, возвращать
+                название месяца по номеру элемента массива.
+                Вот так ещё бывает:
+                new Date().toLocaleString('ru', {       
+                month: 'long'       
+                });
+ 
+              -->
               <label>
                 дата заезда:
-                <time" datetime="2017-04-24">24 апреля 2017</time>
-              </label><label>
+                <input type="date" value="2017-04-24"> <!--Тут placeholder не работает-->
+              </label><br>
+              
+              <label>
                 дата выезда:
-                <type="time" value="" placeholder="4 июля 2017">
-              </label>
-              <br><button class="blue-back" type="submit" name="search">найти</button>
+                <input type="date" value="2017-04-24"> 
+              </label> <br>
+              <button class="blue-back" type="submit" name="search">найти</button>
             </form>
 
           </div>
