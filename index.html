@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - главная страница</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
   <header class="main-header">
     <nav class="main-navigation" tabindex="1">
       <ul class="site-navigation">
-        <li> <a href="info.html">Информация</a></li>
-        <li> <a href="photo-video.html">Фото и видео</a></li>
+        <li class="align-left"> <a href="info.html">Информация</a></li>
+        <li class="align-left"> <a href="photo-video.html">Фото и видео</a></li>
         <li class="main-header-logo">
            <a href="index.html"><img src="img/logo.svg" width="111" height="24"
            alt="Логотип города Седона"></a> 
         </li>
-        <li> <a href="map.html">Карта штата</a></li>
-        <li> <a href="hotels.html">Гостиницы</a></li>
+        <li class="align-right"> <a href="map.html">Карта штата</a></li>
+        <li class="align-right"> <a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -28,7 +30,7 @@
         <img src="img/polygon.png" width="1203" alt="" height="59">
         <div class="white-back">
           <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="ordinary-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
 
@@ -150,7 +152,7 @@
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <div class="interactive">
-            <button class="brown-button" type="button">поиск гостиницы в седоне</button>
+            <button class="button-brown" type="button">поиск гостиницы в седоне</button>
             <form class="visually-hidden" enctype="multipart/form-data">
               <!--Здесь будет форма-->
               <!--Не могу найти способ приведения к виду макета. Варианты:
@@ -193,7 +195,7 @@
                 
               </div>
 
-              <button class="blue-back" type="submit" name="search">найти</button>
+              <button class="button-blue" type="submit" name="search">найти</button>
             </form>
 
           </div>

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+.site-navigation,
+.footer-social ul{
+	list-style: none;	
+}
+
+.site-navigation a,
+.footer-social a{
+	color: #000000;
+
+}
+
+.blue-back,
+.button-blue,
+.main-navigation a:hover,
+.main-navigation a:focus
+{
+  background-color: #81b3d2;
+}
+
+.main-navigation a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.align-left{
+  
+  text-align: left;
+}
+.align-right{
+  
+  text-align: right;
+}
+
+.button-blue:hover,
+.button-blue:focus,
+.footer-social a:hover,
+.footer-social a:focus {
+  background-color: #669ec0;
+}
+
+.footer-social a:active,
+.button-blue:active {
+  background-color: #5496bd;
+
+}
+
+.blue-back>.bold,
+.button-blue,
+.button-brown{
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.blue-back>.ordinary-text{
+  color: #ffffff;
+}
+
+.blue-back {
+  width: 400px;
+  height: 256px;
+}
+
+.button-brown {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.button-brown:hover{
+  background-color: #604e43;
+}
+
+.button-brown:active{
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.welcome-banner{
+  text-align: center;
+}
+
+.ordinary-text{
+  color: #333333;
+}
+
+.grid-item{
+  text-align: center;
+}
+
+.button-blue{
+  width: 458px;
+  height: 58px;
+}
