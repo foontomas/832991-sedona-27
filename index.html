@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
+  <div class="main-container white-back">
   <header class="main-header">
     <nav class="main-navigation" tabindex="1">
       <ul class="site-navigation">
@@ -24,7 +25,7 @@
   </header>
 
     <main>
-      <section class="welcome-banner" style="background-color: gray;">
+      <section class="welcome-banner lh-26px" style="background-color: gray;">
         <img src="img/background-photo.jpg" alt="" width="1200" height="773">
         <img src="img/welcome.svg" width="459" alt="" height="353">
         <img src="img/polygon.png" width="1203" alt="" height="59">
@@ -102,7 +103,7 @@
             </div>   
         </div>
 
-        <div class="grid-item">
+        <div class="grid-item grey-back">
           <p class="bold"> 
               небольшая
               площадь
@@ -117,7 +118,7 @@
           </div>
         </div>
 
-        <div class="grid-item">
+        <div class="grid-item grey-back">
             <p class="bold"> 
                 красивая
                 дорога
@@ -131,7 +132,7 @@
             </div>
           </div>
 
-          <div class="grid-item">
+          <div class="grid-item grey-back">
               <p class="bold"> 
                   мало
                   туристов
@@ -147,13 +148,13 @@
       </section>
 
       <section>
-        <h2>поиск гостиницы в седоне</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, <br>
+        <h2 class="not-visible" >поиск гостиницы в седоне</h2>
+        <p class="pseudo-header">Заинтересовались?</p>
+        <p class="ordinary-text">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <div class="interactive">
             <button class="button-brown" type="button">поиск гостиницы в седоне</button>
-            <form class="visually-hidden" enctype="multipart/form-data">
+            <form class="visually-hidden form-decor white-back" enctype="multipart/form-data">
               <!--Здесь будет форма-->
               <!--Не могу найти способ приведения к виду макета. Варианты:
                 <input type="date" value="2017-04-24">
@@ -207,7 +208,7 @@
     </main>
 
     <footer class="semi-transparency">
-      <p class="footer-contacts">
+      <p class="footer-contacts bold lh-26px">
         #visitsedona<br>
         ТЕЛЕФОН: +7 (495) 666-02-66
     </p>
@@ -235,12 +236,12 @@
     </div>
     <p class="footer-copyright" style="background-color: gray;">
       <b>website by:</b>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg"
-          width="115" height="41" alt="логотип htmlacademy"></a>
+      <a class="htmla-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg"
+        width="115" height="41" alt="логотип htmlacademy"></a>
     </p>
 
     </footer>
-
+  </div>>   
 </body>
 
 </html>
