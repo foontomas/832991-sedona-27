@@ -10,6 +10,7 @@ body {
   text-transform: uppercase;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -38,13 +39,12 @@ a {
 
 .site-navigation a,
 .footer-social a{
-	color: #000000;
-  
+  color: #000000;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-  color: #81b3d2;
+  color: #81b3d2;;
 }
 .blue-back,
 .button-blue {
@@ -64,22 +64,35 @@ a {
   text-align: right;
 }
 
+.social-button:visited,
+.social-button{
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  display: block;
+}
+.social-button img{
+  display:block;
+  margin: auto;
+  
+  
+}
 .button-blue:hover,
 .button-blue:focus,
-.footer-social a:hover,
+.social-button:hover, /*footer-social a:hover*/
 .footer-social a:focus {
   background-color: #669ec0;
 }
 
-.footer-social a:active,
+.social-button:active, /*.footer-social a:active*/
 .button-blue:active {
   background-color: #5496bd;
 
 }
 
 .blue-back>.bold,
-.button-blue,
-.button-brown{
+.big-button-blue,
+.big-button-brown{
   color: #ffffff;
   font-size: 21px;
   text-transform: uppercase;
@@ -95,9 +108,21 @@ a {
 }
 
 .button-brown {
+  
+  background-color: #766357;
+}
+.big-button-brown{
   width: 568px;
   height: 86px;
-  background-color: #766357;
+}
+
+.small-button-brown,
+.small-button-blue{
+  width: 142px;
+  height: 27px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .button-brown:hover{
@@ -158,9 +183,14 @@ a {
   text-align: center;
 }
 
-.button-blue{
+.big-button-blue{
   width: 458px;
   height: 58px;
+}
+
+.small-button-blue{
+  width: 110px;
+  height: 27px;
 }
 
 .not-visible{
@@ -186,10 +216,29 @@ a {
   padding-left: 15px;
 }
 
-.htmla-link{
+/*.htmla-link{
   
   width: 115px; 
   height: 41px;
   mask-image: url('img/logo-htmla.svg');
   background-color: #231f20;
+}*/
+
+.sortby li,
+.catalog li{
+  /*text-decoration: none;*/
+  list-style: none;
+}
+
+.catalog-item a{
+  color:#000000;
+}
+
+.rating-back{
+  width: 110px;
+  height: 27px;
+  background-color:#f2f2f2;
+  color: #666666;
+  font-weight: 400;
+  padding: 5px 13px 6px 16px;
 }
