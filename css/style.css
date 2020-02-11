@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
+  
 }
 
 
@@ -128,16 +128,12 @@ a {
 
 .welcome-banner{
   text-align: center;
-
-  
-  
-}
-.welcome-banner{
   width: 1200px;
-  height: 800px;
+  height: 508px;
   background-image: url(../img/welcome.svg), url(../img/polygon.png), url(../img/background-photo.jpg);
-  background-size: 50%, 100%, 100%;
-  background-position: center, bottom, center;
+  background-size: 40%, 100%, 100%;
+  background-position: center, bottom, top;
+
   border: 1px solid red;
   position: relative;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -253,4 +249,17 @@ a {
 
 .footer-contacts{
   text-align: left;
+}
+
+.htmla-cprght {
+  fill: #231f20;
+}
+
+.htmla-cprght:hover,
+.htmla-cprght:focus {
+  fill: #81b3d2;
+}
+
+.htmla-cprght:active{
+  fill: #bdbbbc;
 }
