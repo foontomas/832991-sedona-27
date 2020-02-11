@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 
@@ -53,15 +54,6 @@ a {
 
 .main-navigation a:active{
   color: rgba(0, 0, 0, 0.3);
-}
-
-.align-left{
-  
-  text-align: left;
-}
-.align-right{
-  
-  text-align: right;
 }
 
 .social-button:visited,
@@ -136,6 +128,22 @@ a {
 
 .welcome-banner{
   text-align: center;
+
+  
+  
+}
+.welcome-banner{
+  width: 1200px;
+  height: 800px;
+  background-image: url(../img/welcome.svg), url(../img/polygon.png), url(../img/background-photo.jpg);
+  background-size: 50%, 100%, 100%;
+  background-position: center, bottom, center;
+  border: 1px solid red;
+  position: relative;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  
+
 }
 
 .ordinary-text{
@@ -241,4 +249,8 @@ a {
   color: #666666;
   font-weight: 400;
   padding: 5px 13px 6px 16px;
+}
+
+.footer-contacts{
+  text-align: left;
 }
