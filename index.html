@@ -32,12 +32,12 @@
         <img src="img/polygon.png" width="1203" alt="" height="59">-->
         <div class="white-back">
           <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-          <p class="ordinary-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="lh-26px">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
 
       <section class="inner-grid">
-        <h2 class="hidden">преимущества</h2>
+        <h2 class="not-visible">преимущества</h2>
       <!---Часть кода, отмеченная на макете красным, пропущена Тут, скорее всего, много блоков
       <div> со свойством display:flex-->
         <div class="font-white blue-back grid-item">
@@ -174,12 +174,12 @@
               -->
               <label>
                 дата заезда:
-                <input type="text" name="check-in-date" placeholder="24 апреля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$">
+                <input class="grey-back" type="text" name="check-in-date" placeholder="24 апреля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$">
               </label><br>
               
               <label>
                 дата выезда:
-                <input type="text" name="check-out-date" placeholder="7 июля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$"> 
+                <input class="grey-back" type="text" name="check-out-date" placeholder="7 июля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$"> 
               </label>
               
               <!--это же имитация нативного number, может, лучше использовать связку span и input type="text" для вывода?-->
@@ -187,12 +187,12 @@
 
                 <label for="adults">взрослые:</label>
                 <button class="minus" name="bminus" type="button">-</button>
-                  <input type="number" id="adults" value="1" min="0" max="100" step="1">
+                  <input class="grey-back" type="number" id="adults" value="1" min="0" max="100" step="1">
                 <button class="plus" name="bplus" type="button">+</button>
 
                 <label for="child">дети:</label>
                 <button class="minus" name="bminus" type="button">-</button>
-                  <input type="number" id="child" value="1" min="0" max="100" step="1">
+                  <input class="grey-back" type="number" id="child" value="1" min="0" max="100" step="1">
                 <button class="plus" name="bplus" type="button">+</button>
                 
               </div>

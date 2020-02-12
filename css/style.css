@@ -6,8 +6,9 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
+  text-align: center;
   
 }
 
@@ -18,7 +19,7 @@ a {
 
 .main-container{
   width: 1200px;
-  height: 2762px;
+  /*height: 2762px;*/
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -95,8 +96,9 @@ a {
 }
 
 .blue-back {
-  width: 400px;
-  height: 256px;
+  width: 280px;
+  /*height: 256px;*/
+  padding: 46px 60px 64px;
 }
 
 .button-brown {
@@ -142,9 +144,9 @@ a {
 
 }
 
-.ordinary-text{
+/*.ordinary-text{
   color: #333333;
-}
+}*/
 
 .bold{
   color:#000000;
@@ -167,20 +169,19 @@ a {
   background-color: #f2f2f2;
   
 }
-.number input,
-.number button{
-  width: 38px;
-  height: 38px;
-  background-color: #f2f2f2;
+
 }
 
-.form-decor{
+.form-decor {
+  display: inline-block;
   width: 568px;
-  height: 395px;
+  border: 1px solid red;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   line-height: 26px;
   font-weight: 700;
   color:#000000;
+  
+  
 }
 
 .grid-item{
@@ -205,19 +206,52 @@ a {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
+  
 }
 
 .pseudo-header
 .ordinary-text{
   line-height: 24px;
+
 }
 
+.interactive {
+  text-align: center;
+  
+}
+
+.interactive form{
+  padding: 55px;
+  border: solid 1px red;
+  /*width: 568px;*/
+  margin: 0 316px;
+}
 .form-decor input {
   color:#000000;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 15px;
+  border: none;
+  width: 346px;
+  /*height: 38px;*/
+  padding-left: 13px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 29px;
+}
+
+
+
+.number input{
+  width: 38px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.number button{
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
 }
 
 /*.htmla-link{
@@ -262,4 +296,25 @@ a {
 
 .htmla-cprght:active{
   fill: #bdbbbc;
+}
+
+.filter {
+  background-image: url(../img/filter-background.jpg);
+  width: 1200px;
+  height: 273px; 
+  background-position: center;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid white;
+   
+}
+.filter fieldset{
+  border: none;
+}
+
+.filter button,
+.filter input{
+  background: #fff; /* запасной цвет для старых браузеров */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
