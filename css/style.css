@@ -85,9 +85,10 @@ a {
 
 .blue-back>.bold,
 .big-button-blue,
-.big-button-brown{
+.big-button-brown,
+.white-text {
   color: #ffffff;
-  font-size: 21px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -300,21 +301,110 @@ a {
 
 .filter {
   background-image: url(../img/filter-background.jpg);
-  width: 1200px;
-  height: 273px; 
+  background-repeat: no-repeat;
+  width: 1054px;
+  /*height: 273px; */
   background-position: center;
-  display: inline-block;
+  display: flex;
   vertical-align: top;
-  border: 1px solid white;
-   
+  border: solid 2px #ffffff;
+  padding: 31px 74px 35px 72px;
+  justify-content: space-between;
 }
-.filter fieldset{
-  border: none;
+.filter legend{
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 700;
+  
 }
 
-.filter button,
-.filter input{
-  background: #fff; /* запасной цвет для старых браузеров */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+
+.filter fieldset{
+  border: none;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  padding: 0px;
+  margin: 0 0;
+  
 }
+
+.filter button{
+  /*background: #fff; /* запасной цвет для старых браузеров */
+  background-color: transparent;
+  /* rgba(255, 255, 255, 0.1);*/
+  border-radius: 3px;
+}
+
+input[type="checkbox"] {
+  display: none;
+ }
+
+
+ .filter input[type="checkbox"]~span {
+  /*content: " ";*/
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: bottom;
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+}
+
+.filter input[type="checkbox"]:checked~span {
+  /*content: " ";*/
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: bottom;
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+}
+
+
+
+/*input[type="checkbox"] {
+  display: none;
+ }
+
+
+.filter label::after {
+  content: " ";
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: bottom;
+  
+  }
+
+  /*label::after{
+  content: " ";
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  vertical-align: bottom;
+}*/
+
+/*label:after+input:checked {
+  content: " ";
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+}
+/*input[type="checkbox"]:disabled{
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;*/
+}
+  /*.filter input[type="checkbox"]:checked{
+    display: inline-block;
+    background-image: url(../img/checkbox-on.png);
+    width: 27px;
+    height: 23px;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+   }*/
+
+.form-button {
+  width: 133px;
+  height: 32px;
+  }

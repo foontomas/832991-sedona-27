@@ -24,21 +24,21 @@
         </header>
 
         <main>
-            <form class="filter" name="filter-form" method="POST" enctype="multipart/form-data">
+            <form class="filter white-text" name="filter-form" method="POST" enctype="multipart/form-data">
                 <fieldset class="field-group">
                     <legend>инфраструктура:</legend>
                     <label>
                         бассейн
                         <input type="checkbox" name="pool" value="yes" checked>
-                    </label>
+                    </label><br>
                     <label>
                         парковка
                         <input type="checkbox" name="parking" value="yes">
-                    </label>
+                    </label><br>
                     <label>
                         wi-fi
                         <input type="checkbox" name="wi-fi" value="yes">
-                    </label>
+                    </label><br>
                 </fieldset>
 
                 <fieldset class="field-group">
@@ -46,18 +46,19 @@
                     <legend>тип жилья:</legend>
                     <label>
                         гостиница
-                        <input type="checkbox" name="hotel" value="yes" checked>
-                    </label>
+                        <input type="checkbox" name="hotel" value="yes" checked><span></span>
+                    </label><br>
                     <label>
                         мотель
-                        <input type="checkbox" name="motel" value="yes" checked>
-                    </label>
+                        <input type="checkbox" name="motel" value="yes" checked><span></span>
+                    </label><br>
                     <label>
                         апартаменты
-                        <input type="checkbox" name="aparts" value="yes" checked>
-                    </label>
+                        <input type="checkbox" name="aparts" value="yes" checked><span></span>
+                    </label><br>
                 </fieldset>
                 <fieldset class="field-group">
+
                     <legend>Стоимость в сутки (р):</legend>
 
                     <!--<label for="range-value">Стоимость в сутки (р):</label>-->
@@ -67,7 +68,7 @@
                         
                     </div>
                     <input type="range" multiple min="0" max="3000" step="1" id="range-value"><br>
-                    <button class="form-button" type="submit" name="form-button">показать</button>
+                    <button class="form-button white-text" type="submit" name="form-button">показать</button>
                 </fieldset>
             </form>
 
