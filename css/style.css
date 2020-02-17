@@ -31,7 +31,8 @@ a {
   text-align: center;
 }
 
-.white-back>h3{
+.white-back>h3,
+.sortby>h3 {
   font-size: 21px;
   line-height: 26px;
 }
@@ -89,9 +90,6 @@ a {
 
 }
 
-
-.big-button-blue,
-.big-button-brown,
 .white-text {
   color: #ffffff;
   font-size: 14px;
@@ -114,9 +112,14 @@ a {
   
   background-color: #766357;
 }
-.big-button-brown{
+.big-button-brown {
   width: 568px;
   height: 86px;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .small-button-brown,
@@ -148,14 +151,7 @@ a {
   border: 1px solid red;
   position: relative;
   background-repeat: no-repeat, no-repeat, no-repeat;
-
-  
-
 }
-
-/*.ordinary-text{
-  color: #333333;
-}*/
 
 .bold{
   color:#000000;
@@ -179,11 +175,8 @@ a {
   
 }
 
-}
-
 .form-decor {
   display: inline-block;
-  width: 568px;
   border: 1px solid red;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   line-height: 26px;
@@ -200,6 +193,11 @@ a {
 .big-button-blue{
   width: 458px;
   height: 58px;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .small-button-blue{
@@ -221,7 +219,6 @@ a {
 
 .pseudo-header+.ordinary-text { 
   line-height: 24px;
-
 }
 
 .interactive {
@@ -248,8 +245,6 @@ a {
   padding-bottom: 11px;
   margin-bottom: 29px;
 }
-
-
 
 .number input{
   width: 38px;
@@ -292,6 +287,7 @@ a {
 
 .footer-contacts{
   text-align: left;
+  text-decoration: none; /*в Edge всё равно подчёркивает телефон, как ссылку и выделяет синим */
 }
 
 .htmla-cprght {
@@ -402,7 +398,6 @@ input[type="checkbox"] {
 /*input[type="checkbox"]:disabled{
   background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;*/
-}
   /*.filter input[type="checkbox"]:checked{
     display: inline-block;
     background-image: url(../img/checkbox-on.png);
