@@ -6,10 +6,10 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
   text-transform: uppercase;
   text-align: center;
-  
+  color: #333333;
+  background-color: #ffffff;
 }
 
 
@@ -21,6 +21,7 @@ a {
   width: 1200px;
   /*height: 2762px;*/
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -31,8 +32,7 @@ a {
   text-align: center;
 }
 
-.white-back>h3,
-.sortby>h3 {
+h3 {
   font-size: 21px;
   line-height: 26px;
 }
@@ -357,12 +357,12 @@ input[type="checkbox"] {
 
 .filter input[type="checkbox"]:checked~span {
   /*content: " ";*/
-  display: inline-block;
+  /*display: inline-block;
   width: 27px;
   height: 23px;
-  vertical-align: bottom;
+  vertical-align: bottom;*/
   background-image: url(../img/checkbox-on.png);
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 
 
