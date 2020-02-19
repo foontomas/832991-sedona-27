@@ -108,6 +108,14 @@ h3 {
   padding: 46px 60px 64px;
 }
 
+.inner-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
 .button-brown {
   
   background-color: #766357;
