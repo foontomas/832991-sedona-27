@@ -53,8 +53,28 @@ h3 {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-  color: #81b3d2;;
+  color: #81b3d2;
 }
+
+.site-navigation{
+  display: flex;
+  flex-basis: 239px;
+  flex-direction: row;
+  justify-content: space-around;
+  /*padding-top: 22px;
+  padding-bottom: 24px;*/
+  margin: 0px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  align-items: baseline;
+  align-content: flex-end;
+  
+
+}
+.main-header-logo{
+  flex-basis: 244px;
+}
+
 .blue-back,
 .button-blue {
   background-color: #81b3d2;
