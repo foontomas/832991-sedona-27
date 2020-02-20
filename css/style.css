@@ -90,6 +90,15 @@ h3 {
 
 }
 
+/*.cover{
+  width:280px;
+  height: 146px;
+  margin: 0px;
+}*/
+
+.blue-back p{
+  margin: 0px;
+}
 .white-text {
   color: #ffffff;
   font-size: 14px;
@@ -105,7 +114,7 @@ h3 {
   color: #ffffff;
   width: 280px;
   /*height: 256px;*/
-  padding: 46px 60px 64px;
+  padding: 43px 60px 61px;
 }
 
 .inner-grid{
@@ -113,7 +122,6 @@ h3 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 .button-brown {
@@ -196,6 +204,14 @@ h3 {
 
 .grid-item{
   text-align: center;
+  width: 280px;
+padding: 43px 60px 61px;
+  
+}
+
+.grid-item .content-image{
+  width: 800px;
+  height: 256px;
 }
 
 .big-button-blue{
