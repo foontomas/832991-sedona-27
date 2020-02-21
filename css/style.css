@@ -58,21 +58,28 @@ h3 {
 
 .site-navigation{
   display: flex;
-  flex-basis: 239px;
-  flex-direction: row;
-  justify-content: space-around;
-  /*padding-top: 22px;
-  padding-bottom: 24px;*/
-  margin: 0px;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  align-items: baseline;
-  align-content: flex-end;
   
-
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin: 0px;
+  
 }
-.main-header-logo{
+
+.site-navigation li {
+display: flex;
+outline: 1px solid #666;
+flex-basis: 239px;
+align-items: center;
+justify-content: center;
+height: 56px; /*если без высоты - рисует с заданными в макете внутренними отступами 79px.
+высота строки 26, по 22 внутр. отступы, итого высота li на 9px больше, чем нужно и лого не выходит за пределы контейнера*/
+}
+.site-navigation
+.main-header-logo {
   flex-basis: 244px;
+  display: block;
+  z-index: 5;
 }
 
 .blue-back,
@@ -327,6 +334,15 @@ padding: 43px 60px 61px;
   color: #666666;
   font-weight: 400;
   padding: 5px 13px 6px 16px;
+}
+
+.semi-transparency{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social{
+  display: flex;
 }
 
 .footer-contacts{
