@@ -39,7 +39,7 @@ h3 {
 
 .site-navigation,
 .footer-social ul{
-	list-style: none;	
+  list-style: none;	
 }
 
 .lh-26px{
@@ -124,7 +124,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 }*/
 
 .blue-back p{
-  margin: 0px;
+  /*margin: 0px;*/
 }
 .white-text {
   color: #ffffff;
@@ -139,16 +139,17 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .blue-back {
   color: #ffffff;
-  width: 280px;
+  /*width: 280px;*/
   /*height: 256px;*/
-  padding: 43px 60px 61px;
+  /*padding: 43px 60px 61px;*/
 }
 
 .inner-grid{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /*justify-content: center;*/
   flex-wrap: wrap;
+  outline: 1px dashed #666;
 }
 
 .button-brown {
@@ -230,10 +231,19 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 
 .grid-item{
-  text-align: center;
-  width: 280px;
-padding: 43px 60px 61px;
   
+  width: 280px;
+  padding: 43px 60px 61px;
+  
+}
+
+.content-image{
+  width: 800px;
+  /*height: 256px;*/
+  display: flex;
+  /*outline: 1px solid red;*/
+  margin: 0px;
+  padding: 0px;
 }
 
 .grid-item .content-image{
@@ -327,6 +337,13 @@ padding: 43px 60px 61px;
   color:#000000;
 }
 
+.catalog li{
+  display: flex;
+  outline: 1px solid blue;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .rating-back{
   width: 110px;
   height: 27px;
@@ -342,8 +359,31 @@ padding: 43px 60px 61px;
 }
 
 .footer-social{
-  display: flex;
+  display: inline-block;
+  flex-direction: row;
+  width: 150px;
+ 
 }
+
+.icon-back li{
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+.icon-back img {
+  align-content: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.icon-back {
+  margin: 0px;
+  display: flex;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+
 
 .footer-contacts{
   text-align: left;
