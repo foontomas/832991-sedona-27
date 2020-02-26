@@ -37,8 +37,7 @@ h3 {
   line-height: 26px;
 }
 
-.site-navigation,
-.footer-social ul{
+.site-navigation {
   list-style: none;	
 }
 
@@ -46,8 +45,7 @@ h3 {
   line-height: 26px;
 }
 
-.site-navigation a,
-.footer-social a{
+.site-navigation a {
   color: #000000;
 }
 
@@ -91,27 +89,14 @@ height: 56px; /*если без высоты - рисует с заданным�
   color: rgba(0, 0, 0, 0.3);
 }
 
-.social-button:visited,
-.social-button{
-  background-color: #81b3d2;
-  width: 46px;
-  height: 48px;
-  display: block;
-}
-.social-button img{
-  display:block;
-  margin: auto;
-  
-  
-}
 .button-blue:hover,
 .button-blue:focus,
-.social-button:hover, /*footer-social a:hover*/
+.footer-social a:hover, 
 .footer-social a:focus {
   background-color: #669ec0;
 }
 
-.social-button:active, /*.footer-social a:active*/
+.footer-social a:active, 
 .button-blue:active {
   background-color: #5496bd;
 
@@ -337,6 +322,19 @@ height: 56px; /*если без высоты - рисует с заданным�
   color:#000000;
 }
 
+.description{
+  display: flex;
+  width: 258px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.description
+.ordinary-text {
+  display: inline-block;
+  margin-right: 39px;
+}
+
 .catalog li{
   display: flex;
   outline: 1px solid blue;
@@ -355,16 +353,23 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .semi-transparency{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.9;
+  z-index: 5;
 }
 
 .footer-social{
   display: inline-block;
-  flex-direction: row;
   width: 150px;
  
 }
 
+.footer-social ul{
+  display: flex;
+  flex-direction: row;
+}
+/*
 .icon-back li{
   display: inline-block;
   vertical-align: middle;
@@ -382,12 +387,46 @@ height: 56px; /*если без высоты - рисует с заданным�
   padding: 0px;
   justify-content: space-around;
 }
+*/
+
+.footer-social a{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: inline-block;
+}
+
+.twitter{
+  background-image: url('../img/tw-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook{
+  background-image: url('../img/fb-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube{
+  background-image: url('../img/youtube-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 
 .footer-contacts{
   text-align: left;
   text-decoration: none; /*в Edge всё равно подчёркивает телефон, как ссылку и выделяет синим */
+}
+
+.footer-copyright{
+  display: flex;
+  align-items: center;
+}
+.footer-copyright b{
+  margin-right: 10px;
 }
 
 .htmla-cprght {
