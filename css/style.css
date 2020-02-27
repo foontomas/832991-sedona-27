@@ -317,23 +317,49 @@ height: 56px; /*если без высоты - рисует с заданным�
   /*text-decoration: none;*/
   list-style: none;
 }
+.catalog-item{
+  padding: 30px 73px 30px 72px;
+}
 
 .catalog-item a{
   color:#000000;
 }
 
+.catalog-item-image{
+  margin: 0px;
+}
+
 .description{
   display: flex;
-  width: 258px;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 258px;
+  margin-top: 0px;
+ 
+  margin-right: 450px;
+  margin-left: 30px;
+}
+
+.description a {
+  margin-bottom: 17px;
+  display: inline-block;
+}
+
+.description h3{
+  margin: 0px;
 }
 
 .description
 .ordinary-text {
   display: inline-block;
   margin-right: 39px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
 }
+
+
 
 .catalog li{
   display: flex;
