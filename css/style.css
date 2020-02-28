@@ -351,7 +351,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 
 .description a {
-  margin-bottom: 17px;
+  margin-bottom: 0px;
   display: inline-block;
 }
 
@@ -362,17 +362,40 @@ height: 56px; /*если без высоты - рисует с заданным�
 .description
 .ordinary-text {
   display: inline-block;
-  margin-right: 39px;
-  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-bottom: 18px;
   margin-top: 0px;
 
 }
 
 .rating{
   text-align: end;
+  margin-left: auto;
 
 }
 
+.column {
+  display: flex;
+  width: 142px;
+  flex-direction: column;
+  align-items:  flex-start;
+  justify-content: flex-start;
+}
+
+.column:first-child{
+  margin-right: 6px;
+}
+
+.column button{
+  padding: 0px;
+}
+.table{
+  display: flex;
+  width: 180px;
+  flex-direction: row;
+  align-items:  flex-start;
+  justify-content: flex-start;
+}
 
 .catalog li{
   display: flex;
