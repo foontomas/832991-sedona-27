@@ -312,10 +312,19 @@ height: 56px; /*если без высоты - рисует с заданным�
   background-color: #231f20;
 }*/
 
+.sortby{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 72px;
+}
 .sortby li,
 .catalog li{
-  /*text-decoration: none;*/
   list-style: none;
+}
+
+.sortby li {
+  display: inline-block;
 }
 .catalog-item{
   padding: 30px 73px 30px 72px;
@@ -359,6 +368,10 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 }
 
+.rating{
+  text-align: end;
+
+}
 
 
 .catalog li{
