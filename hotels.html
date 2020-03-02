@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        
         <div class="main-container">
             <header class="main-header">
                 <nav class="main-navigation" tabindex="1">
@@ -77,14 +78,19 @@
                     <h3>
                         Найдено:3
                     </h3>
+                    <span >Сортировка:</span>
                     <ul>
-                        <li>Сортировка:</li>
+                       
                         <li><a href="#">по цене</a></li>
                         <li><a href="#">по типу</a></li>
                         <li><a href="#">по рейтингу</a></li>
                     </ul>
-                    <a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>
-                    <a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка по убыванию"></a>
+                    <div class="arrow">
+                        <a href="#"><svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" alt="Сортировка по возрастанию" width="11" height="10" viewBox="0 0 11 10">
+                            <path d="M5.5 0L0 10h11z"/></svg></a>
+                        <a href="#"><svg class="arrow-down rotate" xmlns="http://www.w3.org/2000/svg" alt="Сортировка по убыванию" width="11" height="10" viewBox="0 0 11 10">
+                            <path d="M5.5 0L0 10h11z"/></svg></a>
+                    </div>
                 </div>
                 <section class="catalog">
                     <h2 class="not-visible">Вывод поиска</h2> 
@@ -275,8 +281,5 @@
           
               </footer>
         </div>
-
-            
-
     </body>
 </html>

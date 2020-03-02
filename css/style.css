@@ -317,6 +317,10 @@ height: 56px; /*если без высоты - рисует с заданным�
   flex-direction: row;
   justify-content: space-around;
   padding-left: 72px;
+  margin-right: 72px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
 }
 .sortby li,
 .catalog li{
@@ -325,6 +329,41 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .sortby li {
   display: inline-block;
+  margin-left: 33px;
+  text-align: start;
+}
+.sortby ul{
+  text-align: start;
+  padding-left: 0px;
+}
+
+.sortby span {
+  margin-left: 49px;
+}
+
+ .arrow {
+  text-align: end;
+  margin-left: auto;
+  
+}
+
+.arrow-up,
+.arrow-down{
+  fill: #cacaca;
+}
+.arrow-up:hover,
+.arrow-down:hover,
+.arrow-up:focus,
+.arrow-down:focus {
+  fill: #231F20;
+}
+.arrow-up:active,
+.arrow-down:active{
+  fill: #81b3d2;
+}
+.arrow .rotate{
+  transform: rotate(180deg);
+  margin-left: 12px;
 }
 .catalog-item{
   padding: 30px 73px 30px 72px;
@@ -395,6 +434,10 @@ height: 56px; /*если без высоты - рисует с заданным�
   flex-direction: row;
   align-items:  flex-start;
   justify-content: flex-start;
+}
+
+.catalog ul{
+  padding-left: 0px;
 }
 
 .catalog li{
