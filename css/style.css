@@ -331,6 +331,7 @@ height: 56px; /*если без высоты - рисует с заданным�
   display: inline-block;
   margin-left: 33px;
   text-align: start;
+  
 }
 .sortby ul{
   text-align: start;
@@ -339,6 +340,20 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .sortby span {
   margin-left: 49px;
+}
+.sortby a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration-line: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
+}
+.sortby a:hover,
+.sortby a:focus {
+  color:#81b3d2;
+}
+.sortby a:active {
+  color: #000000;
+  text-decoration: none;
 }
 
  .arrow {
@@ -569,12 +584,15 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .filter fieldset{
   border: none;
-  display: inline-block;
+  /*display: inline-block;*/
   text-align: left;
   vertical-align: top;
   padding: 0px;
   margin: 0 0;
-  
+  width: 139px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .filter button{
@@ -582,6 +600,7 @@ height: 56px; /*если без высоты - рисует с заданным�
   background-color: transparent;
   /* rgba(255, 255, 255, 0.1);*/
   border-radius: 3px;
+  margin: 0 auto;
 }
 
 input[type="checkbox"] {
@@ -650,6 +669,62 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
     vertical-align: bottom;
    }*/
+
+   /*.field-group{
+  width: 139px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}*/
+
+.wide {
+  width: 314px;
+}
+
+.field-group div{
+  width: 314px; 
+  outline: solid white 1px;
+  margin-top: 13px;
+  display: flex;
+}
+
+.field-group .range-to,
+.field-group .range-from {
+  margin: 0px;
+  padding: 0px;
+  width: 157px;
+  text-align: center;
+  display: inline-block;
+}
+.range-from p{
+  margin: 11px 0;
+}
+
+#range-value {
+  width: 317px;
+  margin-top: 13px;
+  margin-bottom: 23px;
+
+}
+
+/*Выравниваю лейблы к инпутам в форме фильтрации.
+Есть подозрение, что это обычный justify-content: space-between,
+но он почему-то не работает((*/
+
+.filter fieldset:nth-child(1) legend,
+.filter fieldset:nth-child(1) label{
+ margin-bottom: 36px;
+}
+
+.filter fieldset:nth-child(2) legend,
+.filter fieldset:nth-child(2) label{
+ margin-bottom: 36px;
+}
+
+.filter fieldset:nth-child(1) label:last-child,
+.filter fieldset:nth-child(2) label:last-child {
+ margin-bottom: 0px;
+}
 
 .form-button {
   width: 133px;
