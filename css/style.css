@@ -601,6 +601,8 @@ height: 56px; /*если без высоты - рисует с заданным�
   /* rgba(255, 255, 255, 0.1);*/
   border-radius: 3px;
   margin: 0 auto;
+  
+  
 }
 
 input[type="checkbox"] {
@@ -703,7 +705,7 @@ input[type="checkbox"] {
 #range-value {
   width: 317px;
   margin-top: 13px;
-  margin-bottom: 23px;
+  margin-bottom: 50px;
 
 }
 
