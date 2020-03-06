@@ -12,6 +12,11 @@ body {
   background-color: #ffffff;
 }
 
+a:hover,
+button:hover{
+  cursor:pointer;
+}
+
 
 a {
   text-decoration: none;
@@ -169,10 +174,13 @@ height: 56px; /*если без высоты - рисует с заданным�
   color: rgba(255, 255, 255, 0.3);
 }
 
+
 .welcome-banner{
   text-align: center;
   width: 1200px;
   height: 508px;
+  background-color: #5496bd;
+  
   background-image: url(../img/welcome.svg), url(../img/polygon.png), url(../img/background-photo.jpg);
   background-size: 40%, 100%, 100%;
   background-position: center, bottom, top;
@@ -553,8 +561,8 @@ height: 56px; /*если без высоты - рисует с заданным�
   fill: #231f20;
 }
 
-.htmla-cprght:hover,
-.htmla-cprght:focus {
+.htmla-link:hover .htmla-cprght,
+.htmla-link:focus .htmla-cprght {
   fill: #81b3d2;
 }
 
