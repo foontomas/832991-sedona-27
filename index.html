@@ -164,7 +164,7 @@
           </div>
       </section>
       <div class="map">
-        <form class="visually-hidden form-decor" enctype="multipart/form-data">
+        <form class="visually-hidden form-decor modal-show" enctype="multipart/form-data">
           <!--Здесь будет форма-->
           <!--Не могу найти способ приведения к виду макета. Варианты:
             <input type="date" value="2017-04-24">
@@ -196,12 +196,12 @@
 
             <label for="adults">взрослые:</label>
             <button class="minus" name="bminus" type="button">-</button>
-              <input class="grey-back" type="number" id="adults" value="1" min="0" max="100" step="1">
+              <input class="grey-back" type="number" name="adults" value="1" min="0" max="100" step="1">
             <button class="plus" name="bplus" type="button">+</button>
 
             <label for="child">дети:</label>
             <button class="minus" name="bminus" type="button">-</button>
-              <input class="grey-back" type="number" id="child" value="1" min="0" max="100" step="1">
+              <input class="grey-back" type="number" name="child" value="1" min="0" max="100" step="1">
             <button class="plus" name="bplus" type="button">+</button>
             
           </div>
@@ -239,6 +239,75 @@
     </p>
   </footer>
   </div>
+
+  <script>
+    var link = document.querySelector(".big-button-brown");
+    var popup = document.querySelector(".modal-show");
+    var close = popup.querySelector(".big-button-brown");
+    var form = popup.querySelector("form");
+    var checkIn = popup.querySelector("[name=check-in-date]");
+    var checkOut = popup.querySelector("[name=check-out-date]");
+    var adults = popup.querySelector("[name=adults]");
+    var child = popup.querySelector("[name=child]");
+    var isStorageSupport = true;
+    var storage = "";
+    
+    try {
+      storage = localStorage.getItem("check-in-date");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      if (storage) {
+      checkIn.value = storage;
+      checkOut.focus;
+      }
+      else{
+        checkIn.focus();
+      }
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+
+    }
+  });  
+
+    });
+
+
+    close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!checkIn.value || !checkOut.value || !adults.value || !child.value}) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      console.log ("Введите данные в поля формы");
+    }
+    popup.classList.add("modal-error");
+    else {
+      if (isStorageSupport) {
+        localStorage.setItem("check-in-date", checkIn.value);
+        localStorage.setItem("check-out-date", checkOut.value);
+        localStorage.setItem("adults", adults.value);
+        localStorage.setItem("child", child.value);
+      }
+      
+  });
+  </script>
+
 </body>
 
 </html>
