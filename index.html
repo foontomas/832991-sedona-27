@@ -240,74 +240,7 @@
   </footer>
   </div>
 
-  <script>
-    var button = document.querySelector(".big-button-brown");
-    var popup = document.querySelector(".modal-show");
-    var close = document.querySelector(".big-button-brown");
-    var form = document.querySelector("form");
-    var checkIn = document.querySelector("[name=check-in-date]");
-    var checkOut = document.querySelector("[name=check-out-date]");
-    var adults = document.querySelector("[name=adults]");
-    var child = document.querySelector("[name=child]");
-    var isStorageSupport = true;
-    var storage = "";
-
-    if (popup.classList.contains("modal-show")){
-      popup.classList.remove("modal-show");
-      popup.classList.add("visually-hidden");
-    }
-    
-    try {
-      storage = localStorage.getItem("check-in-date");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-//слушаем большую коричневую кнопку
-    button.addEventListener('click', function (evt) {
-      
-      evt.preventDefault();
-      popup.classList.remove("visually-hidden");
-      popup.classList.add("modal-show");
-      popup.classList.add("button-opened");
-      console.log("работает");
-      if (storage) {
-      checkIn.value = storage;
-      checkOut.focus;
-      }
-      else{
-        checkIn.focus();
-      }
-//начали слушать клавиатуру
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("button-opened")) {
-        popup.classList.remove("modal-show");
-        popup.classList.add("visually-hidden");
-        popup.classList.remove("modal-error");
-        popup.classList.remove("button-opened");
-      }
-
-    }
-  }); //закончили слушать клавиатуру  
-
-    /*button.addEventListener("click", function (evt) {
-      
-        evt.preventDefault();
-        if (popup.classList.contains("button-opened")) {
-          popup.classList.remove("modal-show");
-          popup.classList.add("visually-hidden");
-          popup.classList.remove("modal-error");
-          popup.classList.remove("button-opened");
-          
-        }
- 
-    }); //завершили слушать кнопку при открытой форме*/
-    
-    }); //завершили слушать кнопку
-
-  </script>
+  <script src="./js/script.js"></script>
 
 </body>
 
