@@ -225,10 +225,12 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 
 .modal-show {
-  display: none;
-  animation: bounce 0.6s;
+  display: inline-block;
+  /*animation: bounce 0.6s;*/
+}
 
-  
+.visually-hidden{
+  display: none;
 }
 
 @keyframes bounce {
