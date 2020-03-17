@@ -386,6 +386,28 @@ height: 56px; /*если без высоты - рисует с заданным�
   background-color: #f2f2f2;
 }
 
+input[type="text"].grey-back{
+  box-sizing: border-box;
+  padding-right: 40px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+input[type="text"]:hover.grey-back{
+  background-color: #ebebeb;
+  border: none;
+}
+
+input[type="text"]:focus.grey-back{
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+}
+
+input[type="text"]:active.grey-back{
+  border-color: #e5e5e5;
+  border: solid 2px #e5e5e5;
+}
+
 /*.htmla-link{
   
   width: 115px; 
