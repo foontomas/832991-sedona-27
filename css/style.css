@@ -14,7 +14,7 @@ body {
 
 a:hover,
 button:hover{
-  cursor:pointer;
+  cursor: pointer;
 }
 
 
@@ -105,6 +105,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 .footer-social a:active, 
 .button-blue:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 
 }
 
@@ -233,7 +234,7 @@ height: 56px; /*если без высоты - рисует с заданным�
   display: none;
 }
 
-@keyframes bounce {
+/*@keyframes bounce {
   0% {
     transform: translateY(-2000px);
   }
@@ -249,7 +250,21 @@ height: 56px; /*если без высоты - рисует с заданным�
   100% {
     transform: translateY(0);
   }
-}
+}*/
+/*@keyframes bounce{
+	from{
+	top: 25px;
+	animation-timing-function: ease-in;
+	}
+	50%{
+		top:50px;
+		 animation-timing-function: ease-out;
+	}
+	to{
+		top: 100px;
+	}
+	
+  }*/
 
 @keyframes shake {
   0%,
@@ -476,6 +491,15 @@ height: 56px; /*если без высоты - рисует с заданным�
   display: inline-block;
 }
 
+.description a:hover,
+.description .arrow-up:focus {
+  color: #81b3d2;
+}
+
+.description a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .description h3{
   margin: 0px;
 }
@@ -547,15 +571,25 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 
 .footer-social{
-  display: inline-block;
+  display: flex;
   width: 150px;
+  
+  flex-direction: row;
+  flex-wrap: nowrap;
  
 }
 
-.footer-social ul{
+/*.footer-social ul{
   display: flex;
   flex-direction: row;
-}
+  justify-content: space-between;
+}*/
+
+/*.footer-social a:active,
+.footer-social a:focus  {
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 5;
+}*/
 /*
 .icon-back li{
   display: inline-block;
@@ -576,7 +610,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 */
 
-.footer-social a{
+/*.footer-social a{
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -600,8 +634,32 @@ height: 56px; /*если без высоты - рисует с заданным�
   background-repeat: no-repeat;
   background-position: center;
 }
+*/
+.footer-social a{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
 
+.footer-social a:nth-child(3){
+  margin-right: 0px;
+}
 
+.twitter svg{
+  
+  
+  /*vertical-align: middle;*/
+}
+
+.footer-social a:active .icon{
+  fill: rgba(255, 255, 255, 0.3);
+}
 
 .footer-contacts{
   text-align: left;
@@ -625,7 +683,7 @@ height: 56px; /*если без высоты - рисует с заданным�
   fill: #81b3d2;
 }
 
-.htmla-cprght:active{
+.htmla-link:active .htmla-cprght{
   fill: #bdbbbc;
 }
 
@@ -638,8 +696,8 @@ height: 56px; /*если без высоты - рисует с заданным�
   display: flex;
   vertical-align: top;
   border: solid 2px #ffffff;
-  padding: 31px 74px 35px 72px;
-  justify-content: space-between;
+  padding: 31px 72px 35px 72px;
+  /*justify-content: space-between;*/
 }
 .filter legend{
   line-height: 21px;
@@ -780,14 +838,16 @@ input[type="checkbox"] {
 /*Стили для куска формы с ранжированием из демонстрации*/
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto; 
 
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 13px;
 
   font-weight: 600;
   font-size: 16px;
@@ -918,19 +978,28 @@ input[type="checkbox"] {
 Есть подозрение, что это обычный justify-content: space-between,
 но он почему-то не работает((*/
 
-.filter fieldset:nth-child(1) legend,
-.filter fieldset:nth-child(1) label{
- margin-bottom: 36px;
+
+.filter fieldset:nth-child(1) label,
+.filter fieldset:nth-child(2) label{
+ margin-bottom: 22px;
 }
 
-.filter fieldset:nth-child(2) legend,
-.filter fieldset:nth-child(2) label{
- margin-bottom: 36px;
+.filter fieldset:nth-child(1) legend,
+.filter fieldset:nth-child(2) legend {
+  margin-bottom: 28px;
 }
 
 .filter fieldset:nth-child(1) label:last-child,
 .filter fieldset:nth-child(2) label:last-child {
  margin-bottom: 0px;
+}
+
+.filter fieldset:nth-child(1) {
+  margin-right: 147px;
+}
+
+.filter fieldset:nth-child(2) {
+  margin-right: 314px;
 }
 
 .form-button {
@@ -965,3 +1034,4 @@ input[type="checkbox"] {
   background-repeat: space no-repeat;
   background-size: 18px 17px;
 }
+

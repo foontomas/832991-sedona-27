@@ -30,11 +30,13 @@ var button = document.querySelector(".big-button-brown");
       popup.classList.remove("visually-hidden");
       popup.classList.add("modal-show");
       
+      
       }
       else if(popup.classList.contains("modal-show")){
         popup.classList.remove("modal-show");
         popup.classList.add("visually-hidden");
         popup.classList.remove("modal-error");
+        
        
       }
       if (storage) {
@@ -46,17 +48,16 @@ var button = document.querySelector(".big-button-brown");
       }
     //начали слушать клавиатуру
     window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.add("visually-hidden");
-        popup.classList.remove("modal-error");
-        /*popup.classList.remove("button-opened");*/
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
+          popup.classList.add("visually-hidden");
+        }
+  
       }
-
-    }
-    }); //закончили слушать клавиатуру  
+    });  //закончили слушать клавиатуру  
     
   }); //завершили прослушивание кнопки
 
