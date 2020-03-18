@@ -181,29 +181,43 @@
             });
 
           -->
-          
-          <label>
-            дата заезда:
-            <input class="grey-back" type="text" name="check-in-date" placeholder="24 апреля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$">
-            
-          </label><br>
-          
-          <label>
-            дата выезда:
-            <input class="grey-back" type="text" name="check-out-date" placeholder="7 июля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$"> 
-          </label>
-          
-          <!--это же имитация нативного number, может, лучше использовать связку span и input type="text" для вывода?-->
+          <div class="input-cover">
+            <label for id="checkIn">дата заезда: </label>
+            <div class="input-field">
+              <input class="input-back" id="checkIn" type="text" name="check-in-date" placeholder="24 апреля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                  <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                  <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+              </svg>
+              </a>
+            </div> 
+          </div> 
+         
+          <div class="input-cover">
+            <label for id="checkOut">дата выезда:</label>
+            <div class="input-field">
+              <input class="input-back" id="checkOut" type="text" name="check-out-date" placeholder="7 июля 2017" size="17" pattern="^[а-яА-Я0-9-_\.\s]{1,16}$"> 
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                  <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                  <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+              </svg>
+              </a>
+            </div>
+          </div>
+          <!--это же имитация нативного number, может, лучше использовать связку span и input type="text" для вывода?
+          Согласно требованиям, это интерактивный элемент - или кнопка, или ссылка-->
           <div class="number">
 
             <label for="adults">взрослые:</label>
             <button class="minus" name="bminus" type="button">-</button>
-              <input class="grey-back" type="number" name="adults" value="1" min="0" max="100" step="1">
+              <input class="input-back" type="number" name="adults" value="1" min="0" max="100" step="1">
             <button class="plus" name="bplus" type="button">+</button>
 
             <label for="child">дети:</label>
             <button class="minus" name="bminus" type="button">-</button>
-              <input class="grey-back" type="number" name="child" value="1" min="0" max="100" step="1">
+              <input class="input-back" type="number" name="child" value="1" min="0" max="100" step="1">
             <button class="plus" name="bplus" type="button">+</button>
             
           </div>

@@ -349,6 +349,8 @@ height: 56px; /*если без высоты - рисует с заданным�
   
 }
 
+/*Форма на главной странице*/
+
 .map form{
   padding: 55px;
   border: solid 1px red;
@@ -362,16 +364,24 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 .form-decor input {
   color:#000000;
+  background-color: #f2f2f2;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  border: none;
-  width: 346px;
-  /*height: 38px;*/
+  width: 346px; /*было 346, ещё 30 в запасе под картинку*/
+  box-sizing: border-box;
   padding-left: 13px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  outline: none;
+  border: none;
+  
+  /*height: 38px;*/
+  /*padding-left: 13px;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-bottom: 29px;
+  margin-bottom: 29px;*/
+  
 }
 
 .number input{
@@ -382,31 +392,64 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .number button{
   width: 38px;
-  height: 38px;
-  background-color: #f2f2f2;
-}
-
-input[type="text"].grey-back{
-  box-sizing: border-box;
-  padding-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   background-color: #f2f2f2;
   border: none;
+  
 }
 
-input[type="text"]:hover.grey-back{
+.input-cover{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 29px;
+}
+
+.input-field{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 346px;
+  /*padding-right: 40px;*/
+  border: none;
+  vertical-align: middle;
+}
+
+.input-field a{
+  
+  position: absolute;
+  z-index: 6;
+  right: 64px;
+  display: flex;
+  
+}
+
+.input-field svg{
+  fill: #cacaca;
+}
+
+.input-field a:hover svg{
+  fill: black;
+}
+
+.input-field a:active svg{
+  fill: #81b3d2;
+}
+
+input[type="text"]:hover.input-back{
   background-color: #ebebeb;
   border: none;
 }
 
-input[type="text"]:focus.grey-back{
-  border: solid 2px #e5e5e5;
+input[type="text"]:focus.input-back{
   background-color: #ffffff;
+  outline: solid 2px #e5e5e5;
+  border: none;
 }
 
-input[type="text"]:active.grey-back{
-  border-color: #e5e5e5;
-  border: solid 2px #e5e5e5;
-}
 
 /*.htmla-link{
   
@@ -415,7 +458,7 @@ input[type="text"]:active.grey-back{
   mask-image: url('img/logo-htmla.svg');
   background-color: #231f20;
 }*/
-
+/*Форма на странице hotels.html*/
 .sortby{
   display: flex;
   flex-direction: row;
