@@ -31,6 +31,7 @@ button {
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
   margin: 0 auto;
   background-color: #ffffff;
+  position: relative;
 }
 
 .main-navigation {
@@ -75,7 +76,6 @@ h3 {
 
 .site-navigation li {
 display: flex;
-outline: 1px solid #666;
 flex-basis: 239px;
 align-items: center;
 justify-content: center;
@@ -112,15 +112,6 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 }
 
-/*.cover{
-  width:280px;
-  height: 146px;
-  margin: 0px;
-}*/
-
-.blue-back p{
-  /*margin: 0px;*/
-}
 .white-text {
   color: #ffffff;
   font-size: 14px;
@@ -134,17 +125,14 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .blue-back {
   color: #ffffff;
-  /*width: 280px;*/
-  /*height: 256px;*/
-  /*padding: 43px 60px 61px;*/
+ 
 }
 
 .inner-grid{
   display: flex;
   flex-direction: row;
-  /*justify-content: center;*/
   flex-wrap: wrap;
-  outline: 1px dashed #666;
+  
 }
 
 .button-brown {
@@ -190,9 +178,10 @@ height: 56px; /*если без высоты - рисует с заданным�
   background-size: 40%, 100%, 100%;
   background-position: center, bottom, top;
 
-  /*border: 1px solid red;*/
+  
   position: relative;
   background-repeat: no-repeat, no-repeat, no-repeat;
+  
 }
 
 .bold{
@@ -218,14 +207,10 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 
 .form-decor {
-  
-  /*border: 1px solid red;*/
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   line-height: 26px;
   font-weight: 700;
-  color:#000000;
-  
-  
+  color:#000000; 
 }
 
 .modal-show {
@@ -306,7 +291,6 @@ height: 56px; /*если без высоты - рисует с заданным�
   width: 800px;
   /*height: 256px;*/
   display: flex;
-  /*outline: 1px solid red;*/
   margin: 0px;
   padding: 0px;
 }
@@ -356,13 +340,13 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .map form{
   padding: 55px;
-  /*border: solid 1px red;*/
   /*width: 568px;*/
   margin: 0 316px;
   
   position: absolute;
   z-index: 15;
   background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
 }
 .form-decor input {
@@ -372,7 +356,7 @@ height: 56px; /*если без высоты - рисует с заданным�
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 346px; /*было 346, ещё 30 в запасе под картинку*/
+  width: 346px;
   box-sizing: border-box;
   padding-left: 13px;
   padding-top: 12px;
@@ -682,6 +666,15 @@ input[type="text"]:focus.input-back{
   align-items: center;
   opacity: 0.9;
   z-index: 5;
+  background-color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width:100%;
+}
+.main-page{
+  position:absolute;
+  top:2586px;
+
 }
 
 .footer-social{
