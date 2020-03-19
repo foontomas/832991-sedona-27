@@ -22,6 +22,9 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
 .main-container{
   width: 1200px;
   /*height: 2762px;*/
@@ -187,7 +190,7 @@ height: 56px; /*если без высоты - рисует с заданным�
   background-size: 40%, 100%, 100%;
   background-position: center, bottom, top;
 
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   position: relative;
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
@@ -216,7 +219,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .form-decor {
   
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   line-height: 26px;
   font-weight: 700;
@@ -353,7 +356,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 
 .map form{
   padding: 55px;
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   /*width: 568px;*/
   margin: 0 316px;
   
@@ -364,6 +367,7 @@ height: 56px; /*если без высоты - рисует с заданным�
 }
 .form-decor input {
   color:#000000;
+  
   background-color: #f2f2f2;
   font-size: 14px;
   font-weight: 700;
@@ -384,19 +388,64 @@ height: 56px; /*если без высоты - рисует с заданным�
   
 }
 
+.form-decor input::-webkit-input-placeholder {
+  color: #000000;
+ } 
+
 .number input{
   width: 38px;
-  padding-left: 0px;
+  /*padding-left: 0px;*/
+  
   text-align: center;
+  margin:0px;
+  padding: 11px 0;
+  
+}
+.number input::-webkit-inner-spin-button, 
+.number input::-webkit-outer-spin-button {
+  -webkit-appearance: none; 
+  margin: 0;
 }
 
 .number button{
   width: 38px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  /*padding-top: 12px;
+  padding-bottom: 10px;*/
   background-color: #f2f2f2;
   border: none;
-  
+  margin: 0px;
+  padding: 11px 0;
+}
+
+.number button:hover path{
+  fill: #000000;
+}
+
+.number button:active path{
+  fill: #81b3d2;
+  outline: none;
+}
+
+.number-item{
+  width: 114px;
+  display: flex;
+  outline: none;
+  /*flex-basis: 38px;*/
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.number-cover{
+  display: inline-block;
+}
+
+.number{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+  align-items: baseline;
 }
 
 .input-cover{
@@ -613,7 +662,7 @@ input[type="text"]:focus.input-back{
 
 .catalog li{
   display: flex;
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
   flex-direction: row;
   flex-wrap: wrap;
 }

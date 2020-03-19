@@ -49,7 +49,7 @@
               Настоящий городок
             </p>
              <div class="ordinary-text">
-                <p class="number">- №1 -</p>
+                <p>- №1 -</p>
                 <p>
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
@@ -100,7 +100,7 @@
             </p>
             <div class="ordinary-text">
                 
-              <p class="number">— №2 —</p>
+              <p>— №2 —</p>
               <p>
                 Да, по нему можно пройти! Если, конечно, 
                 вы осмелитесь
@@ -115,7 +115,7 @@
           </p>
           <div class="ordinary-text">
               
-            <p class="number">— №3 —</p>
+            <p>— №3 —</p>
             <p>
               Все достопримечательности
               находятся очень близко
@@ -129,7 +129,7 @@
                 дорога
             </p>
             <div class="ordinary-text">
-              <p class="number">— №4 —</p>
+              <p>— №4 —</p>
               <p>  
                 Ехать в Седону из Лас-Вегаса совсем
                 не скучно!
@@ -143,7 +143,7 @@
                   туристов
               </p>
               <div class="ordinary-text">
-                <p class="number">— №5 —</p>
+                <p>— №5 —</p>
                 <p> 
                 Большинство едет в гранд каньон
                 и толпится там
@@ -209,18 +209,42 @@
           <!--это же имитация нативного number, может, лучше использовать связку span и input type="text" для вывода?
           Согласно требованиям, это интерактивный элемент - или кнопка, или ссылка-->
           <div class="number">
-
-            <label for="adults">взрослые:</label>
-            <button class="minus" name="bminus" type="button">-</button>
-              <input class="input-back" type="number" name="adults" value="1" min="0" max="100" step="1">
-            <button class="plus" name="bplus" type="button">+</button>
-
-            <label for="child">дети:</label>
-            <button class="minus" name="bminus" type="button">-</button>
-              <input class="input-back" type="number" name="child" value="1" min="0" max="100" step="1">
-            <button class="plus" name="bplus" type="button">+</button>
             
-          </div>
+            <label for="adults">взрослые:</label>
+            <div class="number-cover">
+              <div class="number-item">
+                  <button class="minus" name="bminus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                      <path fill="#cacaca" d="M0 4 H11 V7 H0 V4"/>
+                    </svg>
+                  </button>
+                  <input class="input-back" type="number" name="adults" value="1" min="0" max="100" step="1">
+                  <button class="plus" name="bplus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                      <path fill="#cacaca" d="M4 0 H7 V4 H11 V7 H7 V11 H4 V7 H0 V4 H4 V0"/>
+                    </svg>
+                  </button> 
+              </div>
+            </div>
+  
+            <label for="child">дети:</label>
+            <div class="number-cover">  
+                <div class="number-item">
+                  <button class="minus" name="bminus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                      <path fill="#cacaca" d="M0 4 H11 V7 H0 V4"/>
+                    </svg>
+                  </button>
+                    <input class="input-back" type="number" name="child" value="1" min="0" max="100" step="1">
+                  <button class="plus" name="bplus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                      <path fill="#cacaca" d="M4 0 H7 V4 H11 V7 H7 V11 H4 V7 H0 V4 H4 V0"/>
+                    </svg>
+                  </button>
+                </div>
+            </div> 
+          </div>  
+          
 
           <button class="button-blue big-button-blue" type="submit" name="search">найти</button>
         </form>
