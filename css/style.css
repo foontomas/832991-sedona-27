@@ -185,11 +185,11 @@ height: 56px; /*если без высоты - рисует с заданным�
   
 }
 
-.welcome-banner img{
-  width: 100.15%;
+.welcome-banner svg{
+  width: 100%;
   position: absolute;
-  bottom: -1.5px;
-  left: -1px;
+  bottom: 0px;
+  left: 0px;
   
 }
 
