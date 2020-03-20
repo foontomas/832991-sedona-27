@@ -171,16 +171,25 @@ height: 56px; /*если без высоты - рисует с заданным�
 .welcome-banner{
   text-align: center;
   width: 1200px;
-  height: 508px;
+  height: 501px;
   background-color: #5496bd;
   
-  background-image: url(../img/welcome.svg), url(../img/polygon.png), url(../img/background-photo.jpg);
+  background-image: url(../img/welcome.svg), url(../img/background-photo.jpg);
   background-size: 40%, 100%, 100%;
-  background-position: center, bottom, top;
+  background-position: center, top;
 
   
   position: relative;
   background-repeat: no-repeat, no-repeat, no-repeat;
+  
+  
+}
+
+.welcome-banner img{
+  width: 100.15%;
+  position: absolute;
+  bottom: -1.5px;
+  left: -1px;
   
 }
 
@@ -843,7 +852,6 @@ input[type="checkbox"] {
 
 
  .filter input[type="checkbox"]~span {
-  /*content: " ";*/
   display: inline-block;
   width: 27px;
   height: 23px;
@@ -852,17 +860,11 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
 }
 
-.filter input[type="checkbox"]:checked~span {
-  /*content: " ";*/
-  /*display: inline-block;
-  width: 27px;
-  height: 23px;
-  vertical-align: bottom;*/
+.filter input[type="checkbox"]:checked~span{
+
   background-image: url(../img/checkbox-on.png);
-  /*background-repeat: no-repeat;*/
+
 }
-
-
 
 /*input[type="checkbox"] {
   display: none;
