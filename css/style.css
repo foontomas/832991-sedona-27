@@ -79,14 +79,27 @@ display: flex;
 flex-basis: 239px;
 align-items: center;
 justify-content: center;
-height: 56px;
+padding-top: 15.25px;
+padding-bottom: 15.25px;
 }
 
-.site-navigation
 .main-header-logo {
-  flex-basis: 244px;
-  display: block;
+  /*flex-basis: 244px;
+  display: block;*/
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-left: -70px;
+  
+
   z-index: 5;
+}
+
+.main-header-back{
+  width: 244px;
+}
+.main-navigation{
+  position: relative;
 }
 .site-navigation a.active{
   color: #766357;
@@ -666,8 +679,12 @@ input[type="text"]:focus.input-back{
 }
 
 .description a:active,
-.footer-contacts a:active {
+.footer-contacts a:active{
   color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-contacts a{
+  color: #000000;
 }
 
 .description h3{
