@@ -41,7 +41,7 @@ button {
   text-align: center;
 }
 
-h3 {
+.header-3 {
   font-size: 21px;
   line-height: 26px;
 }
@@ -149,6 +149,15 @@ height: 56px;
   
 }
 
+.inner-grid .bold{
+  display: block;
+  
+  width: 160px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button-brown {
   
   background-color: #766357;
@@ -234,6 +243,7 @@ height: 56px;
 .modal-show {
   display: inline-block;
   animation: bounce 0.6s;
+  vertical-align: middle;
 }
 
 .visually-hidden{
@@ -324,6 +334,14 @@ height: 56px;
   margin: 26px 0px;
 }
 
+.blue-back.grid-item{
+  padding-top: 43px;
+  padding-right: 60px;
+  padding-left:60px;;
+  padding-bottom:55px;
+  
+}
+
 .content-image{
   width: 800px;
   display: flex;
@@ -361,6 +379,8 @@ height: 56px;
 .pseudo-header+.ordinary-text { 
   line-height: 24px;
 }
+
+
 
 .interactive {
   text-align: center;
@@ -417,12 +437,16 @@ height: 56px;
   padding:0px;
   
 }
+.filter-range input::-webkit-inner-spin-button,
+.filter-range input::-webkit-outer-spin-button,
 .number input::-webkit-inner-spin-button, 
 .number input::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0;
 }
 
+.filter-range input,
+.filter-range input,
 .number input, 
 .number input {
   -moz-appearance:textfield;
@@ -457,6 +481,7 @@ height: 56px;
 
 .number-cover{
   display: inline-block;
+  vertical-align: middle;
 }
 
 .number{
@@ -539,6 +564,7 @@ input[type="text"]:focus.input-back{
   display: inline-block;
   margin-left: 33px;
   text-align: start;
+  vertical-align: baseline;
   
 }
 .sortby ul{
@@ -605,8 +631,11 @@ input[type="text"]:focus.input-back{
   padding: 30px 73px 30px 72px;
 }
 
-.catalog-item a{
+.catalog-item a,
+.description .phone,
+.description .phone:visited{
   color:#000000;
+  text-decoration: none;
 }
 
 .catalog-item-image{
@@ -630,12 +659,14 @@ input[type="text"]:focus.input-back{
  
 }
 
-.description a:hover,
-.description .arrow-up:focus {
+.description .phone:hover,
+.description .arrow-up:focus,
+.footer-contacts a:hover {
   color: #81b3d2;
 }
 
-.description a:active{
+.description a:active,
+.footer-contacts a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -646,6 +677,7 @@ input[type="text"]:focus.input-back{
 .description
 .ordinary-text {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 0px;
   margin-top: 0px;
 
@@ -763,15 +795,18 @@ input[type="text"]:focus.input-back{
 }
 
 .footer-contacts{
-  text-align: left;
+  text-align: center;
   text-decoration: none; /*в Edge всё равно подчёркивает телефон, как ссылку и выделяет синим */
+  display: flex;
+  flex-wrap: wrap;
+  width: 232px;
 }
 
 .footer-copyright{
   display: flex;
   align-items: center;
 }
-.footer-copyright b{
+.footer-copyright span{
   margin-right: 10px;
 }
 
@@ -844,6 +879,17 @@ input[type="checkbox"] {
 .filter input[type="checkbox"]:checked~span{
 
   background-image: url(../img/checkbox-on.png);
+
+}
+
+.filter input[type="checkbox"]:disabled~span{
+
+  background-image: url(../img/checkbox-off-3.png);
+
+}
+.filter input[type="checkbox"]:checked:disabled~span{
+
+  background-image: url(../img/checkbox-on-2.png);
 
 }
 
@@ -1024,10 +1070,12 @@ input[type="checkbox"] {
   background-image: url(../img/star.svg);
   background-repeat: space no-repeat;
   background-size: 18px 17px;
+  vertical-align: middle;
   }
 
   .three-stars{
   display: inline-block;
+  vertical-align: middle;
   width: 64px;
   height: 17px;
   background-image: url(../img/star.svg);
@@ -1037,6 +1085,7 @@ input[type="checkbox"] {
 
 .two-stars{
   display: inline-block;
+  vertical-align: middle;
   width: 41px;
   height: 17px;
   background-image: url(../img/star.svg);
