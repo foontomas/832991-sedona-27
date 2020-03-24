@@ -175,6 +175,16 @@ button {
   margin-right: auto;
 }
 
+.inner-grid p{
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+.inner-grid .ordinary-text{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .button-brown {
 
   background-color: #766357;
@@ -332,6 +342,7 @@ button {
 
   width: 280px;
   padding: 43px 60px 61px;
+  position: relative;
 
 }
 
@@ -372,6 +383,54 @@ button {
   margin: 0px;
   padding: 0px;
 }
+
+.photo-card-1::before {
+  content: "";
+   position: absolute;
+   z-index: 5;
+   bottom: 169px;
+   right: 50%;
+   margin-right: -37.5px;
+   width: 75px;
+   height: 72px;
+   background-image: url(../img/icon-1.svg);
+   background-repeat: no-repeat;
+}
+
+.photo-card-2::before {
+  content:"";
+   position:absolute;
+   z-index: 5;
+   bottom: 169px;
+   right: 50%;
+   margin-right: -37px;
+   width: 74px;
+   height: 70px;
+   background-image: url(../img/icon-3.svg);
+   background-repeat: no-repeat;
+}
+
+.photo-card-3::before {
+  content:"";
+   position:absolute;
+   z-index:5;
+   bottom: 169px;
+   right: 50%;
+   margin-right: -32px;
+   width: 64px;
+   height: 76px;
+   background-image: url(../img/icon-2.svg);
+   background-repeat: no-repeat;
+}
+.photo-card-1,
+.photo-card-2,
+.photo-card-3 {
+  margin-top: 121px;
+  margin-bottom: 26px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .big-button-blue {
   width: 458px;
