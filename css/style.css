@@ -86,7 +86,10 @@ button {
   justify-content: flex-start;
 }
 
-.site-navigation li:nth-child(1) a,
+.site-navigation li:nth-child(1) a {
+  margin-right: 72px;
+}
+
 .site-navigation li:nth-child(2) a {
   margin-left: 75px;
 }
@@ -96,9 +99,11 @@ button {
   justify-content: flex-end;
 }
 
-.site-navigation li:nth-child(4) a,
-.site-navigation li:nth-child(5) a {
+.site-navigation li:nth-child(4) a {
   margin-right: 75px;
+}
+.site-navigation li:nth-child(5) a {
+  margin-right: 72px;
 }
 
 .main-header-logo {
