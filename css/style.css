@@ -87,7 +87,7 @@ button {
 }
 
 .site-navigation li:nth-child(1) a {
-  margin-right: 72px;
+  margin-left: 72px;
 }
 
 .site-navigation li:nth-child(2) a {
@@ -383,7 +383,7 @@ button {
 }
 
 .text-card .card-number {
-  margin: 26px 0px;
+  margin: 23px 0px 26px;
 }
 
 .blue-back.grid-item {
